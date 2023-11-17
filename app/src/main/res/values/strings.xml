@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Валютний калькулятор</string>
+    <string name="btn_convert">Конвертувати</string>
+    <string name="btn_change_currency">Змінити валюту</string>
+    <string name="btn_direction">Змінити напрямок</string>
+    <string name="btn_get_coefs">Дізнатися курс</string>
+    <string-array name="currency_array">
+        <item>UAH</item>
+        <item>EUR</item>
+        <item>USD</item>
+        <item>ZL</item>
+    </string-array>
+</resources>
