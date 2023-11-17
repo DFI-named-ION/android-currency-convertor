@@ -22,7 +22,7 @@
         android:id="@+id/group_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="35dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/logo">
 
@@ -30,10 +30,13 @@
             android:id="@+id/value_top"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:hint="0"
             android:layout_marginHorizontal="50dp"
+            android:hint="0"
+            android:text="0"
             android:textAlignment="center"
-            android:textColorHint="@color/blue"/>
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:inputType="numberDecimal"/>
 
         <Spinner
             android:id="@+id/currency_top"
@@ -43,8 +46,9 @@
             android:layout_alignBottom="@+id/value_top"
             android:layout_alignTop="@+id/value_top"
             android:textAlignment="textStart"
-            android:paddingLeft="20dp"
-            tools:listitem="@layout/currency_item"/>
+            android:paddingLeft="0dp"
+            tools:listitem="@layout/currency_item"
+            android:popupBackground="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +75,6 @@
             android:id="@+id/currency_rate_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Курс ?"
             android:textColor="@color/orange"
             android:textSize="20sp"
             android:layout_gravity="center_vertical"/>
@@ -82,13 +85,13 @@
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
             android:layout_weight="1"
-            tools:listitem="@layout/direction_item"/>
+            tools:listitem="@layout/direction_item"
+            android:popupBackground="@color/black"/>
 
         <TextView
             android:id="@+id/currency_rate_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Курс ?"
             android:textColor="@color/orange"
             android:textSize="20sp"
             android:layout_gravity="center_vertical"/>
@@ -108,9 +111,12 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="0"
+            android:text="0"
             android:layout_marginHorizontal="50dp"
             android:textAlignment="center"
-            android:textColorHint="@color/blue"/>
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:inputType="numberDecimal"/>
 
         <Spinner
             android:id="@+id/currency_bottom"
@@ -120,8 +126,9 @@
             android:layout_alignBottom="@+id/value_bottom"
             android:layout_alignTop="@+id/value_bottom"
             android:textAlignment="textStart"
-            android:paddingLeft="20dp"
-            tools:listitem="@layout/currency_item"/>
+            android:paddingLeft="0dp"
+            tools:listitem="@layout/currency_item"
+            android:popupBackground="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -143,7 +150,7 @@
         android:layout_centerHorizontal="true"
         android:paddingHorizontal="50dp"
         android:textSize="22sp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="35dp"
         android:backgroundTint="@color/black"/>
     <Button
         android:id="@+id/btn_get_coefs"
@@ -154,7 +161,7 @@
         android:layout_centerHorizontal="true"
         android:paddingHorizontal="50dp"
         android:textSize="22sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/yellow"/>
 
 </RelativeLayout>
